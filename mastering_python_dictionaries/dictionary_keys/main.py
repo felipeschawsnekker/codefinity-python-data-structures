@@ -6,13 +6,13 @@ authors_books = {
     'Agatha Christie': ['Murder on the Orient Express', 'The Murder of Roger Ackroyd', 'And Then There Were None', 'Death on the Nile']
 }
 
-keys = ___
+keys = authors_books.keys()
 
 all_books = []
 
-for ___ in keys:
-	for book in ___[key]:
-		___
+for author in keys:
+    for book in authors_books[author]:
+        all_books.append(book)
 
 # Testing
 print("The list of all books in the library:", all_books)
